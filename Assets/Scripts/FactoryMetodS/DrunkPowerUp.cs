@@ -2,9 +2,8 @@
 
 namespace PowerUps
 {
-    public class SpeedPowerUp : PowerUp
+    public class DrunkPowerUp : PowerUp
     {
 
     }
-
 }

@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿ using UnityEngine;
 
 namespace PowerUps
 {
@@ -7,10 +7,10 @@ namespace PowerUps
         [SerializeField] private PowerUpFactory _powerUpFactory;
         private void Update()
         {
-            if (Input.GetKey(KeyCode.Alpha1))
+            if (Input.GetKeyDown(KeyCode.Alpha1))
             {
                 _powerUpFactory.Create("Speed");
-            }else if (Input.GetKey(KeyCode.Alpha2))
+            }else if (Input.GetKeyDown(KeyCode.Alpha2))
             {
                 _powerUpFactory.Create("Drunk");
             }

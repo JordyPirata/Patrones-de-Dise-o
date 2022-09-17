@@ -6,7 +6,6 @@ namespace PowerUps
     {
         [SerializeField] public string _id;
         public string Id => _id;
-
     }
 }
 
