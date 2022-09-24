@@ -4,7 +4,14 @@ namespace PowerUps
 {
     public class PowerUpSpawner : MonoBehaviour
     {
-        [SerializeField] private PowerUpFactory _powerUpFactory;
+        [SerializeField]
+        public PowerUpConfiguration _powerUpConfiguration;
+        private PowerUpFactory _powerUpFactory;
+
+        void Awake()
+        {
+            _powerUpFactory = new PowerUpFactory(Instantiate(_powerUpConfiguration));
+        }
         private void Update()
         {
             if (Input.GetKeyDown(KeyCode.Alpha1))

@@ -1,29 +1,20 @@
-﻿using UnityEngine;
-using System;
-using System.Collections.Generic;
+﻿using Object = UnityEngine.Object;
 
 namespace PowerUps
 {
-    public class PowerUpFactory : MonoBehaviour
+    public class PowerUpFactory 
     {
-        [SerializeField] private PowerUp [] _powerUps;
-        private Dictionary<string,PowerUp> _idToPowerUp; 
+        private PowerUpConfiguration _powerUpConfiguration;
 
-        private void Awake()
+        public PowerUpFactory(PowerUpConfiguration powerUpConfiguration)
         {
-            _idToPowerUp = new Dictionary<string, PowerUp>();
-            foreach (var powerUp in _powerUps)
-            {
-                _idToPowerUp.Add(powerUp.Id, powerUp);
-            }
+            _powerUpConfiguration = powerUpConfiguration;
         }
+
         public PowerUp Create(string id)
         {
-            if(!_idToPowerUp.TryGetValue(id, out PowerUp powerUp))
-            {
-                throw new Exception($"PowerUp with id {id} does not exist");
-            }
-            return Instantiate(powerUp);
+            var powerUp = _powerUpConfiguration.GetPowerUpPrefabById(id);
+            return Object.Instantiate(powerUp);
         }
     }
 }

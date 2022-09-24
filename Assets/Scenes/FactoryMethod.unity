@@ -429,9 +429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad4e6fea76aa8e46af192bbbc3321d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _powerUps:
-  - {fileID: -4056563616506130295, guid: 5b771b1643a9ca54f998eba1ed5ac435, type: 3}
-  - {fileID: -2263388004740040981, guid: 387c1c901ed8a354ebe63b6b2082321d, type: 3}
+  _powerUpConfiguration: {fileID: 0}
 --- !u!4 &1659565502
 Transform:
   m_ObjectHideFlags: 0
@@ -459,4 +457,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3eb617ba2134334fb82f668899fca28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _powerUpFactory: {fileID: 1659565500}
+  _powerUpConfiguration: {fileID: 11400000, guid: 475fb0fccd05d934b82b33b1c97eddec, type: 2}
