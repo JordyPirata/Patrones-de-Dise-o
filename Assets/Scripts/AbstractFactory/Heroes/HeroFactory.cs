@@ -4,9 +4,9 @@ namespace Heroes
 {
     public class HeroFactory
     {
-        private readonly HeroeConfiguration _heroConfiguration;
+        private readonly HeroesConfiguration _heroConfiguration;
 
-        public HeroFactory(HeroeConfiguration heroConfiguration)
+        public HeroFactory(HeroesConfiguration heroConfiguration)
         {
             _heroConfiguration = heroConfiguration;
         }

@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Weapons
 {
     [CreateAssetMenu(menuName = "Custom/Weapon configuration")]
-    public class WeaponConfiguration : ScriptableObject
+    public class WeaponsConfiguration : ScriptableObject
     {
         [SerializeField] private Weapon[] _weapons;
         private Dictionary<string, Weapon> _idToWeapon;

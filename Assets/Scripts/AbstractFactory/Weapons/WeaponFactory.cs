@@ -4,9 +4,9 @@ namespace Weapons
 {
     public class WeaponFactory
     {
-        private readonly WeaponConfiguration _weaponConfiguration;
+        private readonly WeaponsConfiguration _weaponConfiguration;
 
-        public WeaponFactory(WeaponConfiguration weaponConfiguration)
+        public WeaponFactory(WeaponsConfiguration weaponConfiguration)
         {
             _weaponConfiguration = weaponConfiguration;
         }

@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a262a4dcab9c59f49b5fc3c31a652576, type: 3}
+  m_Name: New Weapon Configuration
+  m_EditorClassIdentifier: Assembly-CSharp:Weapons:WeaponConfiguration
+  _weapons:
+  - {fileID: -5012506239243320585, guid: f2532f10600de29418d706af66b4b7d3, type: 3}
+  - {fileID: 1040499320702053925, guid: 7002b752cd31d5549b93788274c843b3, type: 3}
