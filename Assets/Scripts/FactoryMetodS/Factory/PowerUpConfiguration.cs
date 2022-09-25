@@ -5,7 +5,7 @@ using UnityEngine;
 namespace PowerUps
 {
     [CreateAssetMenu(menuName = "Custom/Power up configuration")]
-    public class PowerUpConfiguration : ScriptableObject
+    public class PowerUpConfiguration : ScriptableObject 
     {
         [SerializeField] private PowerUp[] _powerUps;
         private Dictionary<string, PowerUp> _idToPowerUp;
@@ -25,7 +25,7 @@ namespace PowerUps
             {
                 throw new Exception($"PowerUp with id {id} does not exist");
             }
-            return (powerUp);
+            return powerUp;
         }
     }
 }

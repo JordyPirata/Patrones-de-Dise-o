@@ -1,11 +1,10 @@
 ﻿using UnityEngine;
 
-namespace PowerUps
+namespace Weapons
 {
-    public abstract class PowerUp : MonoBehaviour
+    public abstract class Weapon : MonoBehaviour
     {
         [SerializeField] public string _id;
         public string Id => _id;
     }
 }
-

@@ -1,10 +1,10 @@
-﻿using Object = UnityEngine.Object;
+﻿using Object = UnityEngine.Object; 
 
 namespace PowerUps
 {
-    public class PowerUpFactory 
+    public class PowerUpFactory
     {
-        private PowerUpConfiguration _powerUpConfiguration;
+        private readonly PowerUpConfiguration _powerUpConfiguration;
 
         public PowerUpFactory(PowerUpConfiguration powerUpConfiguration)
         {
